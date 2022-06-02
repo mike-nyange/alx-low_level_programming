@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc-S ${CFILE::-2".s"
+gcc -c $CFILE -o ./${CFILE//'.c'/'.o'}
