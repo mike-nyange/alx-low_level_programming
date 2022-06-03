@@ -7,7 +7,6 @@
 int main(void)
 {
 	char first;
-	
 	for (first = 'a'; first <= 'z'; first++)
 	{
 		if (first != 'e' && first != 'q')
