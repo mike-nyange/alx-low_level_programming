@@ -6,7 +6,7 @@
  * Return: all numbers from n to 98.
  */
 
-void print_to_98(int n);
+void print_to_98(int n)
 {
 	if (n <= 98)
 	{
