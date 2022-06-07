@@ -14,8 +14,8 @@ void times_table(void)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			k = x * y;
-			if (x == 0)
+			k = i * j;
+			if (j == 0)
 			{
 				_putchar(k + '0');
 			}
@@ -31,7 +31,7 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(k + '0');
 			}
-			if (x != 9)
+			if (j != 9)
 			{
 				_putchar(',');
 			}			
