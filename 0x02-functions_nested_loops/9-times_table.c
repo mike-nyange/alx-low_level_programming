@@ -24,7 +24,7 @@ void times_table(void)
 			_putchar(i * 7);
 			_putchar(i * 8);
 			_putchar(i * 9);
-			_puthcar('\n');
+			_putchar('\n');
 		}
 	}
 }
