@@ -8,16 +8,24 @@
 
 int main(void)
 {
-	int i, num1 = 0, num2 = 1, next_num = num1 + num2;
+	long int i, j, k, next;
 
-	printf("%d, %d, ", num1, num2);
+	j = 1;
 
-	for (i = 3; i <= 50; ++i)
+	k = 2;
+
+	for (i = 1; i <= 50; ++i)
 	{
-		printf("%d, ", next_num);
-		num1 = num2;
-		num2 = next_num;
-		next_num = num1 + num2;
+		if (j != 20365011074)
+		{
+			printf("%ld, ", j);
+		} else
+		{
+			printf("%ld\n", j);
+		}
+		next = j + k;
+		j = k;
+		k = next;
 	}
 	return (0);
 }
