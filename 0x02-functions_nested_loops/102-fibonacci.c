@@ -12,7 +12,8 @@ int main(void)
 
 	printf("%d, %d, ", num1, num2);
 
-	for (i = 3; i <= 50; ++i){
+	for (i = 3; i <= 50; ++i)
+	{
 		printf("%d, ", next_num);
 		num1 = num2;
 		num2 = next_num;
