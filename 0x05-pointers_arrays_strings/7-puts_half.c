@@ -1,4 +1,4 @@
-#include "main.h"
+B#include "main.h"
 
 /**
  * puts_half - print second half of the string.
@@ -20,7 +20,7 @@ void puts_half(char *str)
 			_putchar(str[i]);
 		}
 	}
-	else if (i %2)
+	else if (i % 2)
 	{
 		for (j = (i - 1) / 2; j < (i - 1); j++)
 		{
