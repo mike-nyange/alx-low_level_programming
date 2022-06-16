@@ -5,6 +5,7 @@
  * @dest: string to append to dest
  * @src: string to be appended
  * @n: bytes from src
+ *
  * Return: dest
  */
 
