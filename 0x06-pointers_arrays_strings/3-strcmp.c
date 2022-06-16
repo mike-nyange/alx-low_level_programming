@@ -8,12 +8,18 @@ B#include "main.h"
  * Return: Always 0.
  */
 int _strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
+	int s;
 
-	while ((s1[i] == s2[i]) && (s1[i] != '\0'))
+	s = 0;
+	while (s1[s] != '\0' && s1[s] != '\0')
 	{
-		i++;
+		if (s1[s] != s2[s])
+		{
+			return (s1[s] - s2[s]);
+		}
+		s++;
 	}
-	return (s1[i] - s2[i]);
+	return (0);
 }
