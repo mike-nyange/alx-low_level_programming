@@ -13,8 +13,8 @@
 int main(int argc, char *argv[])
 {
     int i, result;
-    
-    if (argc != 3)
+
+    if (argc > 2)
     {
         printf("Error\n");
         return (1);
@@ -23,9 +23,9 @@ int main(int argc, char *argv[])
     {
         for (i = 1; i < argc; i++)
         {
-           int x = strtol(argv[i], NULL, 10);
-           result *= x;
-            printf("%d\n", result);
+		int x = atoi(argv[i]);
+		result *= x;
+		printf("%d\n", result);
         }
     }
 }
