@@ -2,12 +2,14 @@
 #include "main.h"
 
 /**
- * _strlen - length of a string
- * @s: input char
- * Return: length of a string
+ * tostr - concatenates all the arguments of your program.
+ * @ac: number of arguments
+ * @av: double pointer to arguments
+ *
+ * Return:pointer to new string, or NULL if error
  */
 
-char *argstostr(int ac, char **av)
+char *tostr(int ac, char **av)
 {
 	int i, j, k = 0, n = 0;
 	char *s;
