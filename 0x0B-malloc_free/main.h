@@ -8,7 +8,7 @@ char *_strdup(char *str);
 
 char **strtow(char *str);
 
-char *argstostr(int ac, char **av);
+char *tostr(int ac, char **av);
 
 char *str_concat(char *s1, char *s2);
 
