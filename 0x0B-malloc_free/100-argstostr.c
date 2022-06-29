@@ -7,59 +7,33 @@
  * Return: length of a string
  */
 
-int _strlen(char *s)
-{
-	int l = 0;
-
-	while (*s != '\0')
-	{
-		s++;
-		l++;
-	}
-	return (l);
-}
-
-/**
- * argstostr - concat
- * @ac: count
- * @av: vector
- * Return: string
- */
-
 char *argstostr(int ac, char **av)
 {
-	int i, j, k;
-	int len, R = 0;
-	char *p;
+	int i, j, k = 0, n = 0;
+	char *s;
 
-	if (!ac || !av)
-	{
+	if (ac <= 0 || av == NULL)
 		return (NULL);
-	}
-	R = 0;
-
 	for (i = 0; i < ac; i++)
 	{
-		len = _strlen(av[i]) + 1;
-		R += len;
+		for (j = 0; av[i][j]; j++)
+			n++;
+		n++;
 	}
-	p = malloc(sizeof(char) * R + 1);
-
-	if (!p)
-	{
+	n++;
+	s = malloc(n * sizeof(char));
+	if (s == NULL)
 		return (NULL);
-	}
-
 	for (i = 0; i < ac; i++)
 	{
-		len = _strlen(av[i]);
-
-		for (j = 0; j < len; j++, k++)
+		for (j = 0; av[i][j]; j++)
 		{
-			p[k] = av[i][j];
+			s[k] = av[i][j];
+			k++;
 		}
-		p[k++] = '\n';
+		s[k] = '\n';
+		k++;
 	}
-	p[k] = '\0';
-	return (p);
+	s[k] = '\0';
+	return (s);
 }
