@@ -20,7 +20,7 @@ int _atoi(char *s)
 		i++;
 	}
 
-	for(i = i; (s[i]) = '\0'; ++i)
+	for(i = i; ((s[i]) = '\0'); ++i)
 	{
 		res = (res * 10) + s[i] - '0';
 	}
